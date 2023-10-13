@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CC3DB8B2AD8511A00F6CD0F /* newUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3DB8A2AD8511A00F6CD0F /* newUser.swift */; };
+		8CC3DB8E2AD9EA4C00F6CD0F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC3DB8D2AD9EA4C00F6CD0F /* Kingfisher */; };
 		8CC6131B2AD7632000470240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6131A2AD7632000470240 /* AppDelegate.swift */; };
 		8CC6131D2AD7632000470240 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6131C2AD7632000470240 /* SceneDelegate.swift */; };
 		8CC6131F2AD7632000470240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6131E2AD7632000470240 /* ViewController.swift */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CC3DB8A2AD8511A00F6CD0F /* newUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newUser.swift; sourceTree = "<group>"; };
 		8CC613172AD7632000470240 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC6131A2AD7632000470240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC6131C2AD7632000470240 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC3DB8E2AD9EA4C00F6CD0F /* Kingfisher in Frameworks */,
 				8CC613332AD7655D00470240 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +96,7 @@
 		8CC613372AD76AD700470240 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8CC3DB8A2AD8511A00F6CD0F /* newUser.swift */,
 				8CC613382AD76B1A00470240 /* User.swift */,
 			);
 			path = Data;
@@ -123,6 +128,7 @@
 			name = Networking;
 			packageProductDependencies = (
 				8CC613322AD7655D00470240 /* Alamofire */,
+				8CC3DB8D2AD9EA4C00F6CD0F /* Kingfisher */,
 			);
 			productName = Networking;
 			productReference = 8CC613172AD7632000470240 /* Networking.app */;
@@ -154,6 +160,7 @@
 			mainGroup = 8CC6130E2AD7632000470240;
 			packageReferences = (
 				8CC613312AD7655D00470240 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8CC3DB8C2AD9EA4C00F6CD0F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 8CC613182AD7632000470240 /* Products */;
 			projectDirPath = "";
@@ -183,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC6133C2AD7755F00470240 /* DateDecoder.swift in Sources */,
+				8CC3DB8B2AD8511A00F6CD0F /* newUser.swift in Sources */,
 				8CC6131F2AD7632000470240 /* ViewController.swift in Sources */,
 				8CC6131B2AD7632000470240 /* AppDelegate.swift in Sources */,
 				8CC613392AD76B1A00470240 /* User.swift in Sources */,
@@ -413,6 +421,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8CC3DB8C2AD9EA4C00F6CD0F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
 		8CC613312AD7655D00470240 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -424,6 +440,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8CC3DB8D2AD9EA4C00F6CD0F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CC3DB8C2AD9EA4C00F6CD0F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		8CC613322AD7655D00470240 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8CC613312AD7655D00470240 /* XCRemoteSwiftPackageReference "Alamofire" */;

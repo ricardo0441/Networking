@@ -17,26 +17,115 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NW-3K-XA6">
-                                <rect key="frame" x="20" y="209" width="390" height="35"/>
+                                <rect key="frame" x="20" y="109" width="390" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get User"/>
                                 <connections>
                                     <action selector="getUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tdw-OW-NQ5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckE-31-8Vt">
+                                <rect key="frame" x="20" y="164" width="390" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toY-ef-4Sg">
+                                <rect key="frame" x="20" y="205" width="390" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Je-he-th0">
+                                <rect key="frame" x="20" y="246" width="390" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edS-zi-QoH">
+                                <rect key="frame" x="20" y="287" width="390" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Post User"/>
+                                <connections>
+                                    <action selector="addUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="STc-nm-PV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjs-9Q-Svn">
+                                <rect key="frame" x="20" y="342" width="390" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Put User"/>
+                                <connections>
+                                    <action selector="updateUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kjr-Sb-heM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKT-np-uiQ">
+                                <rect key="frame" x="20" y="397" width="390" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete User"/>
+                                <connections>
+                                    <action selector="deleteUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZv-Zm-Ffb"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-fO-Cla">
+                                <rect key="frame" x="20" y="452" width="390" height="426"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Zx3-RU-2xY">
+                                <rect key="frame" x="205" y="456" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LK5-w5-kQM">
+                                <rect key="frame" x="139.66666666666666" y="647.66666666666663" width="150.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download Image"/>
+                                <connections>
+                                    <action selector="downloadImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZH-5G-Mgl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="edS-zi-QoH" firstAttribute="top" secondItem="3Je-he-th0" secondAttribute="bottom" constant="20" id="1t9-lg-IQK"/>
+                            <constraint firstItem="KKT-np-uiQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6W6-aa-u9z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ckE-31-8Vt" secondAttribute="trailing" constant="20" id="7RA-oF-hNk"/>
+                            <constraint firstItem="LK5-w5-kQM" firstAttribute="centerX" secondItem="wfb-fO-Cla" secondAttribute="centerX" id="7mw-kH-4cX"/>
+                            <constraint firstItem="ckE-31-8Vt" firstAttribute="top" secondItem="4NW-3K-XA6" secondAttribute="bottom" constant="20" id="9dl-OF-qcy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="toY-ef-4Sg" secondAttribute="trailing" constant="20" id="Hmr-Pb-tFd"/>
+                            <constraint firstItem="ckE-31-8Vt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JyB-rd-7Ym"/>
+                            <constraint firstItem="Hjs-9Q-Svn" firstAttribute="top" secondItem="edS-zi-QoH" secondAttribute="bottom" constant="20" id="KHU-fa-SVy"/>
+                            <constraint firstItem="wfb-fO-Cla" firstAttribute="top" secondItem="KKT-np-uiQ" secondAttribute="bottom" constant="20" id="KZt-56-rMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hjs-9Q-Svn" secondAttribute="trailing" constant="20" id="NRU-td-CCv"/>
+                            <constraint firstItem="toY-ef-4Sg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OBY-X0-Htr"/>
+                            <constraint firstItem="edS-zi-QoH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PiR-S7-Eov"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="edS-zi-QoH" secondAttribute="trailing" constant="20" id="VWJ-8P-VlI"/>
+                            <constraint firstItem="3Je-he-th0" firstAttribute="top" secondItem="toY-ef-4Sg" secondAttribute="bottom" constant="20" id="VpR-lj-S7E"/>
+                            <constraint firstItem="wfb-fO-Cla" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ygl-wm-H2q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4NW-3K-XA6" secondAttribute="trailing" constant="20" id="Zyu-Kb-8Cl"/>
+                            <constraint firstItem="toY-ef-4Sg" firstAttribute="top" secondItem="ckE-31-8Vt" secondAttribute="bottom" constant="20" id="b3X-aI-zWG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wfb-fO-Cla" secondAttribute="bottom" constant="20" id="bN0-Uw-LF9"/>
+                            <constraint firstItem="LK5-w5-kQM" firstAttribute="centerY" secondItem="wfb-fO-Cla" secondAttribute="centerY" id="bOT-hI-epo"/>
+                            <constraint firstItem="Hjs-9Q-Svn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bso-fw-c28"/>
                             <constraint firstItem="4NW-3K-XA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="euO-zU-aM6"/>
-                            <constraint firstItem="4NW-3K-XA6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="pjb-Mk-LKU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wfb-fO-Cla" secondAttribute="trailing" constant="20" id="j0I-i2-dmw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Je-he-th0" secondAttribute="trailing" constant="20" id="p5h-gK-FVM"/>
+                            <constraint firstItem="4NW-3K-XA6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="pjb-Mk-LKU"/>
+                            <constraint firstItem="3Je-he-th0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qad-nS-MvE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KKT-np-uiQ" secondAttribute="trailing" constant="20" id="xXt-BI-LR0"/>
+                            <constraint firstItem="KKT-np-uiQ" firstAttribute="top" secondItem="Hjs-9Q-Svn" secondAttribute="bottom" constant="20" id="xxP-M0-HHa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ActivityIndicator" destination="Zx3-RU-2xY" id="cCQ-X6-ifz"/>
+                        <outlet property="downloadImageButton" destination="LK5-w5-kQM" id="AIF-9d-UkR"/>
+                        <outlet property="emailLabel" destination="toY-ef-4Sg" id="AHJ-mS-fcg"/>
+                        <outlet property="idLabel" destination="3Je-he-th0" id="8Zk-3e-roz"/>
+                        <outlet property="logoImageView" destination="wfb-fO-Cla" id="9w3-or-tqv"/>
+                        <outlet property="nameLabel" destination="ckE-31-8Vt" id="XUm-SK-Vp6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-27"/>
+            <point key="canvasLocation" x="113.02325581395348" y="-27.038626609442062"/>
         </scene>
     </scenes>
     <resources>
